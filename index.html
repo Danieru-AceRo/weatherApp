@@ -20,7 +20,7 @@
       type="text/css"
       href="/_dist_/index.css"
     />
-    <title>Snowpack & Tailwind App</title>
+    <title>Weather app</title>
   </head>
   <body>
     <!--
@@ -36,48 +36,23 @@
         <p
           class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
         >
-          Snowpack
+          Daniel Acevedo
         </p>
         <h3
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
         >
-          Tailwind template
+          Weather App
         </h3>
         <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
-          Use this template to build awesome websites using Snowpack and
-          Tailwind. It also includes Prettier and automatic publish to GitHub
-          pages using GitHub Actions. Learn more:
+          Use this app for search the weather from differents cities around the world. only put the name city in the form below, then press the search button.
         </p>
-        <ul
-          class="text-xl leading-7 sm:flex justify-around sm:max-w-2xl sm:mx-auto mt-10"
-        >
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://snowpack.dev" target="_blank">snowpack.dev</a>
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://tailwindcss.com" target="_blank"
-              >tailwindcss.com</a
-            >
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a
-              href="https://docs.github.com/en/free-pro-team@latest/actions"
-              target="_blank"
-              >GitHub Actions</a
-            >
-          </li>
-        </ul>
-        <p class="mt-14 text-xl leading-7 text-gray-500">Start using it:</p>
-        <div class="my-5 bg-gray-800 p-5 text-white">
-          <code>
-            npx create-snowpack-app my-app --template snowpack-template-tailwind
-          </code>
+        <div class="grid justify-center md:flex justify-items-center mt-4">
+          <input class="md:w-5/12 focus:ring-indigo-500 focus:border-indigo-800  font-bold border-gray-800 rounded-md bg-gray-100 pl-4 py-2 mr-4 placeholder-red-300" type="text" name="city" id="city"  placeholder="Name city">
+          <button id="buttonSearch" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-6/12  md:w-2/12 mt-4 md:mt-0">Search</button>
         </div>
-        <p class="mt-16 text-xl leading-7 text-gray-500 underline">
-          <a href="https://github.com/jonalvarezz/snowpack-template-tailwind"
-            >See on GitHub</a
-          >
-        </p>
+        <div id="renderWeather">
+
+        </div>
       </div>
     </div>
 
